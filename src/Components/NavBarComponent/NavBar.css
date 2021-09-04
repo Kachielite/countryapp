@@ -1,16 +1,16 @@
 
 .container {
-    height: 15vh;
+    height: 12vh;
     width: 100vw;
-    background-color: hsl(0, 0%, 100%);
+    
 }
 .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-    margin: 0 2rem;
+    width: 100%;
 }
 
 .theme {
@@ -23,8 +23,11 @@
 
 p {
     margin-left: 10px;
+    font-weight: 500;
+    width: 100px;
 }
 
 h3 {
     font-weight: bolder;
+    width: 200px;
 }

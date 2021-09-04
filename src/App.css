@@ -1,12 +1,48 @@
 .App {
   text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
-  background-color: red;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
 h3 {
   font-weight: bolder;
+}
+
+.filter-div {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "search drop-down";
+  margin: 30px 30px;
+  grid-gap: 1.4rem;
+  width: 70vw;
+}
+
+.search{
+  grid-area: search;
+  margin: 10px 0;
+  max-width: 50vw;
+
+}
+
+.drop-down {
+  grid-area: drop-down;
+  margin: 10px 0;
+  width: 10vw;
+}
+
+@media only screen and (max-width: 550px) {
+  .filter-div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "search"
+      "drop-down";
+  }
 }
