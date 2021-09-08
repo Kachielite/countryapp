@@ -1,0 +1,44 @@
+.HomePage {
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  h3 {
+    font-weight: bolder;
+  }
+  
+  .filter-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 62vw;
+  }
+  
+  
+  .drop-down {
+    width: 10vw;
+    margin: 25px 0;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .filter-div {
+      flex-direction: column;
+    }
+    .drop-down {
+      width: 10vw;
+      margin: 10px 0;
+    }
+    .dropdown-div {
+      display: flex;
+      justify-content: flex-start;
+      width: 90vw;
+    }
+  
+  } 

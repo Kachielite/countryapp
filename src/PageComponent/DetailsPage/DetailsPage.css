@@ -1,0 +1,43 @@
+.details{
+  width: 100vw;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.navbar {
+    width: 100vw;
+    background-color: white;
+    height: 20vh;
+}
+
+.link {
+    text-decoration: none;
+    padding: 50px 20px;
+    color: hsl(200, 15%, 8%);
+    font-size: 400;
+    font-weight: bolder;
+}
+
+button {
+    background-color: white;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90vw;
+}
+
+img {
+    height: 35vh;
+    width: 35vw;
+}
