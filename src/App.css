@@ -14,6 +14,37 @@ h3 {
 }
 
 .filter-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 62vw;
+}
+
+
+.drop-down {
+  width: 10vw;
+  margin: 25px 0;
+}
+
+@media only screen and (max-width: 550px) {
+  .filter-div {
+    flex-direction: column;
+  }
+  .drop-down {
+    width: 10vw;
+    margin: 10px 0;
+  }
+  .dropdown-div {
+    display: flex;
+    justify-content: flex-start;
+    width: 90vw;
+  }
+
+} 
+
+
+/* .filter-div {
   display: grid;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr;
@@ -33,8 +64,7 @@ h3 {
 
 .drop-down {
   grid-area: drop-down;
-  margin: 10px 0;
-  width: 10vw;
+  max-width: 10vw;
 }
 
 @media only screen and (max-width: 550px) {
@@ -45,4 +75,4 @@ h3 {
       "search"
       "drop-down";
   }
-}
+} */

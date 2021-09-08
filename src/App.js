@@ -27,7 +27,9 @@ function App() {
       <NavBar themeToggle={themeHandler} backgroundTheme={backgroundTheme} elementTheme={elementTheme}/>
       <div className="filter-div">
         <Search className="search" elementTheme={elementTheme}/>
+        <div className="dropdown-div">
         <DropDown className="drop-down" elementTheme={elementTheme}/>
+        </div>
       </div>
       <Card elementTheme={elementTheme}/>
     </div>

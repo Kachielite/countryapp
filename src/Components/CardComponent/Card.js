@@ -21,10 +21,11 @@ const useStyles = makeStyles((theme) => ({
     width:'85vw',
   },
   card: {
-    height: '50vh',
+    height: '340px',
     display: 'flex',
     flexDirection: 'column',
-    margin:'20px'
+    margin:'20px',
+
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
@@ -40,11 +41,14 @@ const useStyles = makeStyles((theme) => ({
   subContent: {
     display: 'flex',
     flexDirection: 'column',
-    height: '20vh',
-    width:'100%',
     margin:'10px',
     fontSize:'0.7rem',
     lineHeight:'0.1rem'
+  },
+  content: {
+    display: 'inline',
+    width:'100%',
+    margin: '11ßpx 0'
   }
 }));
 
@@ -133,9 +137,9 @@ export default function SearchContent(props) {
                         <h3>{item.country}</h3>
                     </div>
                     <div className={classes.subContent}>
-                        <p><span style={{fontWeight:"bold"}}>Population: </span> {item.population}</p>
-                        <p><span style={{fontWeight:"bold"}}>Region:</span> {item.region}</p>
-                        <p><span style={{fontWeight:"bold"}}>Capital:</span> {item.capital} </p>     
+                        <p className={classes.content}><span style={{fontWeight:"bold"}}>Population:</span> {item.population}</p>
+                        <p className={classes.content}><span style={{fontWeight:"bold"}}>Region:</span> {item.region}</p>
+                        <p className={classes.content}><span style={{fontWeight:"bold"}}>Capital:</span> {item.capital} </p>     
                     </div>
                   </CardContent>
                 </Card>

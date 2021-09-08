@@ -18,11 +18,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     
 }
 
 p {
-    margin-left: 10px;
     font-weight: 500;
     width: 100px;
 }
